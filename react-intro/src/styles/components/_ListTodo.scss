@@ -1,0 +1,31 @@
+.todo {
+      margin: 5% 10%;
+
+      &__title {
+            margin-bottom: 2.5%;
+            text-align: center;
+            @include fontRoboto (5vw, 700, black);
+      }
+
+      ul {
+            li {
+                  margin: 5% 10%;
+                  @include fontRoboto (3.5vw, 500, black);
+                  padding: 2%;
+                  border-radius: 2vw;
+
+                  input {
+                        margin-right: 2.5%;
+                  }
+
+            }
+      }
+}
+
+.even {
+      background-color: $blueGreen;
+}
+
+.odd {
+      background-color: $violet;
+}

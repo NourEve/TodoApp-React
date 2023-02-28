@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ListTodo from "./ListTodo";
-import ListTodoFinished from "./ListTodoFinished";
+import ListTodo from "./components/ListTodo";
+import ListTodoFinished from "./components/ListTodoFinished";
+import "./styles/index.scss";
 
 const router = createBrowserRouter([
   {

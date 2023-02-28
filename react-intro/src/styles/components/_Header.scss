@@ -1,0 +1,9 @@
+.header {
+
+      &__title {
+            @include fontRoboto(10vw, 700, black);
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 5%;
+      }
+}

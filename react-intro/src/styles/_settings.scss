@@ -1,0 +1,29 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;700&display=swap');
+
+//variables 
+$blueGreen : #B5D5C5;
+$violet : #B08BBB;
+$orange : #ECA869;
+$light : #F5F5DC;
+
+
+//mixins
+@mixin fontRoboto ($size, $weight, $color) {
+      font-family: 'Roboto Mono', monospace;
+      font-size: $size;
+      font-weight: $weight;
+      color: $color;
+}
+
+//reset
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      background-color: $light;
+}
+
+li {
+      list-style-type: none;
+}

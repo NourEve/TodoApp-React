@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { NavLink, Outlet } from "react-router-dom";
-import Header from "./Header";
-import Saisie from "./Saisie";
-import ListTodo from "./ListTodo";
-import ListTodoFinished from "./ListTodoFinished";
-import Nav from "./Nav";
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
+import Saisie from "./components/Saisie";
+import Nav from "./components/Nav";
 
 const App = () => {
   const [todos, setTodos] = useState(

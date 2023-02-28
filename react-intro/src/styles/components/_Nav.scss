@@ -1,0 +1,46 @@
+.navigation {
+      display: flex;
+      flex-direction: row;
+      margin-top: 5%;
+
+      a {
+            margin: auto;
+            text-decoration: none;
+            cursor: pointer;
+            @include fontRoboto(4vw, 300, black);
+
+            &:hover {
+                  color: $orange;
+            }
+      }
+}
+
+.active {
+      position: relative;
+
+      &::after {
+            content: "";
+            height: 0.7vh;
+            width: 0;
+            background-color: $orange;
+            position: absolute;
+            border-radius: 2vw;
+            top: 100%;
+            right: 0%;
+            -webkit-animation: anim 0.3s ease forwards;
+            animation: anim 0.6s ease forwards;
+
+            @-webkit-keyframes anim {
+                  to {
+                        width: 100%;
+                  }
+            }
+
+            @keyframes anim {
+                  to {
+                        width: 100%;
+                  }
+            }
+
+      }
+}
