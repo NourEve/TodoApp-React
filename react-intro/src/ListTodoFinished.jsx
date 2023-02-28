@@ -1,14 +1,14 @@
 import React from "react";
 import { useOutletContext } from "react-router-dom";
 
-const ListTodo = () => {
+const ListTodoFinished = () => {
   const [todos, checkHandler] = useOutletContext();
   return (
     <div>
-      <h2>Todos</h2>
+      <h2>Todos finished</h2>
       <ul>
         {todos.map((todo, index) =>
-          !todo.completed ? (
+          todo.completed ? (
             <li key={index}>
               <input
                 type="checkbox"
@@ -24,4 +24,4 @@ const ListTodo = () => {
   );
 };
 
-export default ListTodo;
+export default ListTodoFinished;
